@@ -7,8 +7,8 @@ repo_url: https://github.com/ankudinov/autocon01-arista
 plugins:
   - mkdocs-video:
       css_style:
-        width: "70%"
-        height: "25vw"
+        width: "80%"
+        height: "30vw"
 
 theme:
   name: material
@@ -29,7 +29,8 @@ theme:
         icon: material/weather-night
         name: Switch to light mode
   logo: https://www.arista.com/assets/images/logo/Arista_Logo.png
-
+  features:
+    - navigation.tabs
   font:
     text: Roboto
     code: Roboto Mono
@@ -49,4 +50,5 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Home: index.md
+  - Arista at AutoCon01: index.md
+  - References: references.md
