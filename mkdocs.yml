@@ -1,0 +1,45 @@
+---
+site_name: Arista at AutoCon01
+site_url: https://ankudinov.github.io/autocon01-arista/
+repo_name: autocon01-arista
+repo_url: https://github.com/ankudinov/autocon01-arista
+
+plugins:
+  - search
+  - mkdocs-video:
+      css_style:
+        width: "70%"
+        height: "25vw"
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: brown
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: brown
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+  logo: https://www.arista.com/assets/images/logo/Arista_Logo.png
+
+  font:
+    text: Roboto
+    code: Roboto Mono
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+    logo: fontawesome/solid/gears
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
