@@ -5,7 +5,6 @@ repo_name: autocon01-arista
 repo_url: https://github.com/ankudinov/autocon01-arista
 
 plugins:
-  - search
   - mkdocs-video:
       css_style:
         width: "70%"
@@ -13,6 +12,7 @@ plugins:
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -40,6 +40,13 @@ theme:
 
 extra_css:
   - assets/stylesheets/extra.css
+
+markdown_extensions:
+  - attr_list
+  - md_in_html
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
 
 nav:
   - Home: index.md

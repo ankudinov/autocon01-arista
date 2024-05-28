@@ -30,14 +30,18 @@
   .md-header {
     background: #1d3158;
   }
+  .md-header__title {
+    background: #1d3158;
+    display: none;
+  }
   .md-tabs {
-    background: #1d3158    ;
+    background: #1d3158;
   }
   .md-footer {
     background: #1d3158;
   }
   a.md-button.md-button--primary {
-    background-color: #3A6073;
+    background-color: #1d3158;
   }
   [data-md-color-scheme="slate"] {
     --md-footer-bg-color: #1d3158;
