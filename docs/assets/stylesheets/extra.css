@@ -57,3 +57,6 @@
     --md-primary-fg-color--light: #1d3158;
     --md-primary-fg-color: #1d3158;
   }
+  .md-grid {
+    max-width: 100rem;
+  }
