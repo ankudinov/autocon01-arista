@@ -34,7 +34,21 @@ jobs:
           pip install mkdocs-video
           mkdocs build
 
-      - name: Deploy preview
-        uses: rossjrw/pr-preview-action@v1
+      # - name: Deploy preview
+      #   uses: rossjrw/pr-preview-action@v1
+      #   with:
+      #     source-dir: ./site/
+
+      - name: Setup Pages 📖
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact 🔼
+        uses: actions/upload-pages-artifact@v3
         with:
-          source-dir: ./site/
+          path: ./site/
+
+      - name: Deploy to GitHub Pages 🚀
+        id: deployment
+        uses: actions/deploy-pages@v4
+        with:
+          preview: "true"
