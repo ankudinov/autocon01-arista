@@ -34,12 +34,6 @@ jobs:
           pip install mkdocs-video
           mkdocs build
 
-      - name: Install and Build
-        if: github.event.action != 'closed' # You might want to skip the build if the PR has been closed
-        run: |
-          npm install
-          npm run build
-
       - name: Deploy preview
         uses: rossjrw/pr-preview-action@v1
         with:
