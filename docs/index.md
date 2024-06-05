@@ -12,7 +12,9 @@ hide:
 
 # ARISTA at AutoCon01
 
-![type:video](assets/video/autocon-video.mp4)
+<!-- ![type:video](assets/video/autocon-video.mp4) -->
+<!-- <iframe width="80%" src="https://www.youtube.com/embed/KPAFfpiNZZg" allowfullscreen></iframe> -->
+![type:video](https://www.youtube.com/embed/LXb3EKWsInQ)
 
 [Start EVPN Network powered by AVD and ANTA on Codespaces](https://codespaces.new/arista-netdevops-community/one-click-se-demos?quickstart=1&devcontainer_path=.devcontainer%2Fcvaas-cvaas-and-avd-demo--evpn-mlag%2Fdevcontainer.json){ .md-button .md-button--primary target=_blank}
 
