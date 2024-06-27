@@ -3,13 +3,19 @@ name: marp-and-mkdocs-to-pages
 concurrency: marp-and-mkdocs-to-pages
 on:
   push:
-    branches: [master]
+    branches: ['**']
     paths:
     - docs/**
     - mkdocs.yml
     - .github/workflows/publish-pages.yml
+  pull_request:
+    types:
+      - opened
+      - reopened
+      - synchronize
+      - closed
   workflow_dispatch:
-    branches: [master]
+    branches: ['**']
 permissions:
   contents: write
   pages: write
