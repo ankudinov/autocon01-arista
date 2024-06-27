@@ -50,5 +50,5 @@ markdown_extensions:
   - pymdownx.superfences
 
 nav:
-  - Arista at AutoCon01: index.md
+  - Arista at Ansible Automates 24: index.md
   - References: references.md
