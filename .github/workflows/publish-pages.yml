@@ -3,7 +3,7 @@ name: marp-and-mkdocs-to-pages
 concurrency: marp-and-mkdocs-to-pages
 on:
   push:
-    branches: [**]
+    branches: ['**']
     paths:
     - docs/**
     - mkdocs.yml
@@ -15,7 +15,7 @@ on:
       - synchronize
       - closed
   workflow_dispatch:
-    branches: [**]
+    branches: ['**']
 permissions:
   contents: write
   pages: write
